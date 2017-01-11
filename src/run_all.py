@@ -56,4 +56,4 @@ def run(serial=True):
         set_trace()
 
 if __name__ == "__main__":
-    run()
+    run(serial=False)
