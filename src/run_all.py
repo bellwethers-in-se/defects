@@ -3,7 +3,7 @@ from __future__ import print_function, division
 import os
 import sys
 
-root = os.path.join(os.getcwd().split('src')[0], 'src/defects')
+root = os.path.join(os.getcwd().split('src')[0], 'src')
 if root not in sys.path:
     sys.path.append(root)
 
@@ -19,6 +19,7 @@ from stats.effect_size import hedges_g_2
 import pandas
 from utils import print_pandas
 
+
 def deploy(elem):
     data = elem[0][0]
     fname = elem[1][0]
@@ -27,15 +28,17 @@ def deploy(elem):
     result = method(source=project, target=project, n_rep=12)
     for tgt_name, stats in result.iteritems():
         path = os.path.join(root, "results", data.lower(), fname.lower(), tgt_name + ".csv")
+        # set_trace()
         stats.to_csv(path, index=False)
+
 
 def run(serial=True):
     all = get_all_projects()
     dir_names = {
-        "bell": bellw,
+        # "bell": bellw,
         "tca": tca_plus,
-        "tnb": tnb,
-        "vcb": vcb
+        # "tnb": tnb,
+        # "vcb": vcb
     }
     tasks = []
 
@@ -47,13 +50,14 @@ def run(serial=True):
                     os.makedirs(save_path)
                 tasks.append(((data, project), (f_name, method)))
 
-
     if serial:
         map(deploy, tasks)
     else:
         pool = multiprocessing.Pool(processes=16)
         pool.map(deploy, tasks)
-        set_trace()
+
+    set_trace()
+
 
 if __name__ == "__main__":
-    run(serial=False)
+    run(serial=True)

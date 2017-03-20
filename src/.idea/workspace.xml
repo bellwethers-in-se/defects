@@ -1,104 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="441463e4-5cac-4eb0-bf36-d84ee8203ead" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ant/camel.dat" afterPath="$PROJECT_DIR$/plot/plots/ant/camel.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ant/ivy.dat" afterPath="$PROJECT_DIR$/plot/plots/ant/ivy.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ant/jedit.dat" afterPath="$PROJECT_DIR$/plot/plots/ant/jedit.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ant/log4j.dat" afterPath="$PROJECT_DIR$/plot/plots/ant/log4j.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ant/lucene.dat" afterPath="$PROJECT_DIR$/plot/plots/ant/lucene.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ant/poi.dat" afterPath="$PROJECT_DIR$/plot/plots/ant/poi.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ant/velocity.dat" afterPath="$PROJECT_DIR$/plot/plots/ant/velocity.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ant/xalan.dat" afterPath="$PROJECT_DIR$/plot/plots/ant/xalan.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ant/xerces.dat" afterPath="$PROJECT_DIR$/plot/plots/ant/xerces.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/camel/ant.dat" afterPath="$PROJECT_DIR$/plot/plots/camel/ant.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/camel/ivy.dat" afterPath="$PROJECT_DIR$/plot/plots/camel/ivy.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/camel/jedit.dat" afterPath="$PROJECT_DIR$/plot/plots/camel/jedit.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/camel/log4j.dat" afterPath="$PROJECT_DIR$/plot/plots/camel/log4j.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/camel/lucene.dat" afterPath="$PROJECT_DIR$/plot/plots/camel/lucene.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/camel/poi.dat" afterPath="$PROJECT_DIR$/plot/plots/camel/poi.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/camel/velocity.dat" afterPath="$PROJECT_DIR$/plot/plots/camel/velocity.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/camel/xalan.dat" afterPath="$PROJECT_DIR$/plot/plots/camel/xalan.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/camel/xerces.dat" afterPath="$PROJECT_DIR$/plot/plots/camel/xerces.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ivy/ant.dat" afterPath="$PROJECT_DIR$/plot/plots/ivy/ant.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ivy/camel.dat" afterPath="$PROJECT_DIR$/plot/plots/ivy/camel.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ivy/jedit.dat" afterPath="$PROJECT_DIR$/plot/plots/ivy/jedit.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ivy/log4j.dat" afterPath="$PROJECT_DIR$/plot/plots/ivy/log4j.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ivy/lucene.dat" afterPath="$PROJECT_DIR$/plot/plots/ivy/lucene.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ivy/poi.dat" afterPath="$PROJECT_DIR$/plot/plots/ivy/poi.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ivy/velocity.dat" afterPath="$PROJECT_DIR$/plot/plots/ivy/velocity.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ivy/xalan.dat" afterPath="$PROJECT_DIR$/plot/plots/ivy/xalan.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/ivy/xerces.dat" afterPath="$PROJECT_DIR$/plot/plots/ivy/xerces.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/jedit/ant.dat" afterPath="$PROJECT_DIR$/plot/plots/jedit/ant.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/jedit/camel.dat" afterPath="$PROJECT_DIR$/plot/plots/jedit/camel.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/jedit/ivy.dat" afterPath="$PROJECT_DIR$/plot/plots/jedit/ivy.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/jedit/log4j.dat" afterPath="$PROJECT_DIR$/plot/plots/jedit/log4j.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/jedit/lucene.dat" afterPath="$PROJECT_DIR$/plot/plots/jedit/lucene.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/jedit/poi.dat" afterPath="$PROJECT_DIR$/plot/plots/jedit/poi.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/jedit/velocity.dat" afterPath="$PROJECT_DIR$/plot/plots/jedit/velocity.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/jedit/xalan.dat" afterPath="$PROJECT_DIR$/plot/plots/jedit/xalan.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/jedit/xerces.dat" afterPath="$PROJECT_DIR$/plot/plots/jedit/xerces.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/log4j/ant.dat" afterPath="$PROJECT_DIR$/plot/plots/log4j/ant.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/log4j/camel.dat" afterPath="$PROJECT_DIR$/plot/plots/log4j/camel.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/log4j/ivy.dat" afterPath="$PROJECT_DIR$/plot/plots/log4j/ivy.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/log4j/jedit.dat" afterPath="$PROJECT_DIR$/plot/plots/log4j/jedit.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/log4j/lucene.dat" afterPath="$PROJECT_DIR$/plot/plots/log4j/lucene.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/log4j/poi.dat" afterPath="$PROJECT_DIR$/plot/plots/log4j/poi.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/log4j/velocity.dat" afterPath="$PROJECT_DIR$/plot/plots/log4j/velocity.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/log4j/xalan.dat" afterPath="$PROJECT_DIR$/plot/plots/log4j/xalan.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/log4j/xerces.dat" afterPath="$PROJECT_DIR$/plot/plots/log4j/xerces.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/lucene/ant.dat" afterPath="$PROJECT_DIR$/plot/plots/lucene/ant.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/lucene/camel.dat" afterPath="$PROJECT_DIR$/plot/plots/lucene/camel.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/lucene/ivy.dat" afterPath="$PROJECT_DIR$/plot/plots/lucene/ivy.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/lucene/jedit.dat" afterPath="$PROJECT_DIR$/plot/plots/lucene/jedit.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/lucene/log4j.dat" afterPath="$PROJECT_DIR$/plot/plots/lucene/log4j.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/lucene/poi.dat" afterPath="$PROJECT_DIR$/plot/plots/lucene/poi.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/lucene/velocity.dat" afterPath="$PROJECT_DIR$/plot/plots/lucene/velocity.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/lucene/xalan.dat" afterPath="$PROJECT_DIR$/plot/plots/lucene/xalan.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/lucene/xerces.dat" afterPath="$PROJECT_DIR$/plot/plots/lucene/xerces.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/poi/ant.dat" afterPath="$PROJECT_DIR$/plot/plots/poi/ant.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/poi/camel.dat" afterPath="$PROJECT_DIR$/plot/plots/poi/camel.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/poi/ivy.dat" afterPath="$PROJECT_DIR$/plot/plots/poi/ivy.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/poi/jedit.dat" afterPath="$PROJECT_DIR$/plot/plots/poi/jedit.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/poi/log4j.dat" afterPath="$PROJECT_DIR$/plot/plots/poi/log4j.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/poi/lucene.dat" afterPath="$PROJECT_DIR$/plot/plots/poi/lucene.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/poi/velocity.dat" afterPath="$PROJECT_DIR$/plot/plots/poi/velocity.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/poi/xalan.dat" afterPath="$PROJECT_DIR$/plot/plots/poi/xalan.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/poi/xerces.dat" afterPath="$PROJECT_DIR$/plot/plots/poi/xerces.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/velocity/ant.dat" afterPath="$PROJECT_DIR$/plot/plots/velocity/ant.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/velocity/camel.dat" afterPath="$PROJECT_DIR$/plot/plots/velocity/camel.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/velocity/ivy.dat" afterPath="$PROJECT_DIR$/plot/plots/velocity/ivy.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/velocity/jedit.dat" afterPath="$PROJECT_DIR$/plot/plots/velocity/jedit.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/velocity/log4j.dat" afterPath="$PROJECT_DIR$/plot/plots/velocity/log4j.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/velocity/lucene.dat" afterPath="$PROJECT_DIR$/plot/plots/velocity/lucene.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/velocity/poi.dat" afterPath="$PROJECT_DIR$/plot/plots/velocity/poi.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/velocity/xalan.dat" afterPath="$PROJECT_DIR$/plot/plots/velocity/xalan.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/velocity/xerces.dat" afterPath="$PROJECT_DIR$/plot/plots/velocity/xerces.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xalan/ant.dat" afterPath="$PROJECT_DIR$/plot/plots/xalan/ant.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xalan/camel.dat" afterPath="$PROJECT_DIR$/plot/plots/xalan/camel.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xalan/ivy.dat" afterPath="$PROJECT_DIR$/plot/plots/xalan/ivy.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xalan/jedit.dat" afterPath="$PROJECT_DIR$/plot/plots/xalan/jedit.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xalan/log4j.dat" afterPath="$PROJECT_DIR$/plot/plots/xalan/log4j.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xalan/lucene.dat" afterPath="$PROJECT_DIR$/plot/plots/xalan/lucene.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xalan/poi.dat" afterPath="$PROJECT_DIR$/plot/plots/xalan/poi.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xalan/velocity.dat" afterPath="$PROJECT_DIR$/plot/plots/xalan/velocity.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xalan/xerces.dat" afterPath="$PROJECT_DIR$/plot/plots/xalan/xerces.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xerces/ant.dat" afterPath="$PROJECT_DIR$/plot/plots/xerces/ant.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xerces/camel.dat" afterPath="$PROJECT_DIR$/plot/plots/xerces/camel.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xerces/ivy.dat" afterPath="$PROJECT_DIR$/plot/plots/xerces/ivy.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xerces/jedit.dat" afterPath="$PROJECT_DIR$/plot/plots/xerces/jedit.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xerces/log4j.dat" afterPath="$PROJECT_DIR$/plot/plots/xerces/log4j.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xerces/lucene.dat" afterPath="$PROJECT_DIR$/plot/plots/xerces/lucene.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xerces/poi.dat" afterPath="$PROJECT_DIR$/plot/plots/xerces/poi.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xerces/velocity.dat" afterPath="$PROJECT_DIR$/plot/plots/xerces/velocity.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot/plots/xerces/xalan.dat" afterPath="$PROJECT_DIR$/plot/plots/xerces/xalan.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_all.py" afterPath="$PROJECT_DIR$/run_all.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/TCA/execute.py" afterPath="$PROJECT_DIR$/../smells/TCA/execute.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/TCA/tca_plus.py" afterPath="$PROJECT_DIR$/../smells/TCA/tca_plus.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/TCA/tmp/test.csv" afterPath="$PROJECT_DIR$/../smells/TCA/tmp/test.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/TCA/tmp/train.csv" afterPath="$PROJECT_DIR$/../smells/TCA/tmp/train.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/metrics/abcd.py" afterPath="$PROJECT_DIR$/../smells/metrics/abcd.py" />
-    </list>
+    <list default="true" id="441463e4-5cac-4eb0-bf36-d84ee8203ead" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -107,8 +10,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/defects$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1483589342205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/defects$tnb.coverage" NAME="tnb Coverage Results" MODIFIED="1483282411558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TNB" />
+    <SUITE FILE_PATH="coverage/defects$run_all.coverage" NAME="run_all Coverage Results" MODIFIED="1483589342205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -119,7 +22,7 @@
       <file leaf-file-name="recall_vs_loc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/metrics/recall_vs_loc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="51">
               <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
@@ -131,7 +34,7 @@
       <file leaf-file-name="spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot/spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2340">
+            <state relative-caret-position="2652">
               <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
@@ -152,13 +55,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_all.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TCA/prediction/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-418">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NAIVE/prediction/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="59" column="28" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="59" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_all.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_all.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
+            <state relative-caret-position="319">
               <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="564">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="renamehdr.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/Jureczko/renamehdr.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -194,9 +145,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,54 +164,54 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="defects" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="defects" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="defects" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="defects" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="results" />
+              <option name="myItemId" value="NAIVE" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="defects" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="defects" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="results" />
+              <option name="myItemId" value="NAIVE" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="apache" />
+              <option name="myItemId" value="prediction" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,6 +220,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager" selected="Python.run_all">
     <configuration default="false" name="tnb" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -288,17 +239,7 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TNB/tnb.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -375,6 +316,7 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
@@ -404,26 +346,6 @@
       <scripts />
       <node-interpreter value="project" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Attests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="defects" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -457,15 +379,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="defects" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -479,16 +396,9 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="defects" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
@@ -502,18 +412,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="defects" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="testToRun" value="" />
-      <option name="keywords" value="" />
-      <option name="params" value="" />
-      <option name="USE_PARAM" value="false" />
-      <option name="USE_KEYWORD" value="false" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="run_all" type="PythonConfigurationType" factoryName="Python">
@@ -533,6 +435,7 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_all.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
     <list size="2">
@@ -544,6 +447,26 @@
         <item index="0" class="java.lang.String" itemvalue="Python.tnb" />
       </list>
     </recent_temporary>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="defects" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -562,10 +485,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14054927" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21486267" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -574,6 +496,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3739903" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -596,6 +519,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/metrics/recall_vs_loc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot/spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2652">
+          <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tca_vs_bellwether.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#63#110#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/metrics/recall_vs_loc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -693,7 +656,7 @@
     <entry file="file://$PROJECT_DIR$/TCA/tca_plus.py" />
     <entry file="file://$PROJECT_DIR$/metrics/recall_vs_loc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
+        <state relative-caret-position="51">
           <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
@@ -704,7 +667,7 @@
     <entry file="file://$PROJECT_DIR$/TNB/tnb.py" />
     <entry file="file://$PROJECT_DIR$/plot/spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2340">
+        <state relative-caret-position="2652">
           <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
@@ -724,10 +687,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run_all.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="319">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Jureczko/renamehdr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TCA/prediction/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NAIVE/prediction/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="59" column="28" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="59" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

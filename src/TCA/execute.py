@@ -58,7 +58,7 @@ def map_transform(src, tgt, n_components=5):
     col_name = ["Col_" + str(i) for i in xrange(n_components)]
     x0 = pd.DataFrame(get_kernel_matrix(S, n_components), columns=col_name)
     y0 = pd.DataFrame(get_kernel_matrix(T, n_components), columns=col_name)
-
+    set_trace()
     x0.loc[:, src.columns[-1]] = pd.Series(src[src.columns[-1]], index=x0.index)
     y0.loc[:, tgt.columns[-1]] = pd.Series(tgt[tgt.columns[-1]], index=y0.index)
 
@@ -189,6 +189,7 @@ def tca_plus(source, target, n_rep=12):
         val = []
         for src_name, src_path in source.iteritems():
             if not src_name == tgt_name:
+                print("{}  \r".format(src_name[0].upper() + src_name[1:]))
                 src = list2dataframe(src_path.data)
                 tgt = list2dataframe(tgt_path.data)
                 pd, pf, g, auc = [], [], [], []
@@ -198,15 +199,11 @@ def tca_plus(source, target, n_rep=12):
                     recall, loc = None, None
                     norm_src, norm_tgt = smart_norm(src, tgt, dcv_src, dcv_tgt)
                     _train, __test = map_transform(norm_src, norm_tgt)
-                    # for k in np.arange(0.1,1,0.1):
-                    actual, predicted, distribution = predict_defects(train=_train, test=__test)
 
-                    # loc = tgt["$loc"].values
-                    # loc = loc * 100 / np.max(loc)
-                    # recall, loc, au_roc = get_curve(loc, actual, predicted, distribution)
-                    # effort_plot(recall, loc,
-                    #             save_dest=os.path.abspath(os.path.join(root, "plot", "plots", tgt_name)),
-                    #             save_name=src_name)
+                    try:
+                        actual, predicted, distribution = predict_defects(train=_train, test=__test)
+                    except:
+                        set_trace()
 
                     p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual, predicted, distribution)
 
@@ -215,12 +212,9 @@ def tca_plus(source, target, n_rep=12):
                     g.append(_g)
                     auc.append(int(auroc))
 
-                    # set_trace()
-
                 stats.append([src_name, int(np.mean(pd)), int(np.std(pd)),
                               int(np.mean(pf)), int(np.std(pf)),
                               int(np.mean(auc)), int(np.std(auc))])  # ,
-                # int(np.mean(g)), int(np.std(g))])
 
         stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
                                  columns=["Name", "Pd (Mean)", "Pd (Std)",

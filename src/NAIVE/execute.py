@@ -1,4 +1,5 @@
 from __future__ import print_function, division
+
 import os
 import sys
 
@@ -6,36 +7,38 @@ root = os.path.join(os.getcwd().split('src')[0], 'src/defects')
 if root not in sys.path:
     sys.path.append(root)
 
-import warnings
-from prediction.model import nbayes, rf_model
-from py_weka.classifier import classify
+from prediction.model import rf_model
 from utils import *
 from metrics.abcd import abcd
-from metrics.recall_vs_loc import get_curve
-from pdb import set_trace
 import numpy as np
-from scipy.spatial.distance import pdist, squareform
 import pandas
-from plot.effort_plot import effort_plot
 from tabulate import tabulate
+
 
 def weight_training(test_instance, training_instance):
     head = training_instance.columns
     new_train = training_instance[head[:-1]]
-    new_train = (new_train - test_instance[head[:-1]].min()) / (test_instance[head[:-1]].max() - test_instance[head[:-1]].min())
+    new_train = (new_train - test_instance[head[:-1]].mean()) / test_instance[head[:-1]].std()
     new_train[head[-1]] = training_instance[head[-1]]
-    return new_train
+    new_train.dropna(axis=1, inplace=True)
+    tgt = new_train.columns
+    new_test = (test_instance[tgt[:-1]] - test_instance[tgt[:-1]].mean()) / (
+        test_instance[tgt[:-1]].std())
+
+    new_test[tgt[-1]] = test_instance[tgt[-1]]
+    new_test.dropna(axis=1, inplace=True)
+    columns = list(set(tgt[:-1]).intersection(new_test.columns[:-1])) + [tgt[-1]]
+    return new_train[columns], new_test[columns]
 
 
 def predict_defects(train, test):
-
     actual = test[test.columns[-1]].values.tolist()
     actual = [1 if act == "T" else 0 for act in actual]
     predicted, distr = rf_model(train, test)
     return actual, predicted, distr
 
 
-def bellw(source, target, n_rep=12):
+def bellw(source, target, n_rep=12, verbose=False):
     """
     TNB: Transfer Naive Bayes
     :param source:
@@ -55,42 +58,33 @@ def bellw(source, target, n_rep=12):
                 src = list2dataframe(src_path.data)
                 tgt = list2dataframe(tgt_path.data)
 
-                pd, pf, g, auc = [], [], [], []
+                pd, pf, pr, f1, g, auc = [], [], [], [], [], []
                 for _ in xrange(n_rep):
-                    _train = weight_training(test_instance=tgt, training_instance=src)
-                    __test = (tgt[tgt.columns[:-1]] - tgt[tgt.columns[:-1]].min()) / (
-                        tgt[tgt.columns[:-1]].max() - tgt[tgt.columns[:-1]].min())
-                    __test[tgt.columns[-1]] = tgt[tgt.columns[-1]]
+                    _train, __test = weight_training(test_instance=tgt, training_instance=src)
                     actual, predicted, distribution = predict_defects(train=_train, test=__test)
-                    # loc = tgt["$loc"].values
-                    # loc = loc * 100 / np.max(loc)
-                    # recall, loc, au_roc = get_curve(loc, actual, predicted, distribution)
-                    # effort_plot(recall, loc,
-                    #             save_dest=os.path.abspath(os.path.join(root, "plot", "plots", tgt_name)),
-                    #             save_name=src_name)
                     p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual, predicted, distribution)
 
                     pd.append(p_d)
                     pf.append(p_f)
+                    pr.append(p_r)
+                    f1.append(f_1)
                     g.append(_g)
                     auc.append(int(auroc))
-                stats.append([src_name, int(np.mean(pd)), int(np.std(pd)),
-                              int(np.mean(pf)), int(np.std(pf)),
-                              int(np.mean(auc)), int(np.std(auc))])  # ,
+
+                stats.append([src_name, int(np.mean(pd)), int(np.mean(pf)),
+                              int(np.mean(pr)), int(np.mean(f1)),
+                              int(np.mean(g)), int(np.mean(auc))])  # ,
 
         stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
-                                 columns=["Name", "Pd (Mean)", "Pd (Std)",
-                                          "Pf (Mean)", "Pf (Std)",
-                                          "AUC (Mean)", "AUC (Std)"])  # ,
-        # "G (Mean)", "G (Std)"])
-        print(tabulate(stats,
-                       headers=["Name", "Pd (Mean)", "Pd (Std)",
-                                "Pf (Mean)", "Pf (Std)",
-                                "AUC (Mean)", "AUC (Std)"],
-                       showindex="never",
-                       tablefmt="fancy_grid"))
+                                 columns=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"])  # ,
+
+        if verbose: print(tabulate(stats,
+                                   headers=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"],
+                                   showindex="never",
+                                   tablefmt="fancy_grid"))
 
         result.update({tgt_name: stats})
+
     return result
 
 

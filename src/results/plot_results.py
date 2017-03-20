@@ -11,15 +11,21 @@ from tabulate import tabulate
 
 
 def list_communities():
-    for var in ["bell", "tca", "tnb", "vcb"]:
+    for var in ["bell", "tnb", "vcb"]:
         print("Method: {}".format(var.upper()))
-        files = glob(os.path.abspath(os.path.join(".", "apache", var, "*.csv")))
+        files = glob(os.path.abspath(os.path.join(".", "aeeem", var, "*.csv")))
         # set_trace()
         yield files
 
 
 def find_median(dframe):
     return [int(np.median([v for k, v in enumerate(dframe.ix[i].values) if k != i])) for i in
+            xrange(len(dframe))]
+
+
+def find_iqr(dframe):
+    return [int(iqr([v for k, v in enumerate(dframe.ix[i].values) if k != i])) for i
+            in
             xrange(len(dframe))]
 
 
@@ -35,12 +41,6 @@ def find_std(dframe):
             xrange(len(dframe))]
 
 
-def find_iqr(dframe):
-    return [int(iqr([v for k, v in enumerate(dframe.ix[i].values) if k != i])) for i
-            in
-            xrange(len(dframe))]
-
-
 def plot_stuff():
     pd_list = {}
     compare_tl = []
@@ -48,10 +48,11 @@ def plot_stuff():
     for vars in list_communities():
         for var in vars:
             # set_trace()
-            pd_list.update({var.split("/")[-1].split(".")[0]: DataFrame(
-                sorted(read_csv(var)[["Name", "AUC (Mean)"]].values, key=lambda x: x[0], reverse=True))})
+            try:
+                pd_list.update({var.split("/")[-1].split(".")[0]: DataFrame(sorted(read_csv(var)[["Name", "AUC (Mean)"]].values, key=lambda x: x[0], reverse=True))})
+            except:
+                pd_list.update({var.split("/")[-1].split(".")[0]: DataFrame(sorted(read_csv(var)[["Name", "AUC"]].values, key=lambda x: x[0], reverse=True))})
 
-        # set_trace()
         keys = [p for p in sorted(pd_list, reverse=True) if not p == "poi"]  # Find data sets (Sort alphabetically, backwards)
         N = len(keys)  # Find number of elements
         stats = np.zeros((N, N))  # Create a 2-D Array to hold the stats
@@ -76,12 +77,11 @@ def plot_stuff():
         stats.to_excel(os.path.join(save_path, method))
         compare_tl.append(stats.sort_index(inplace=False)["Mean"].values.tolist())
         compare_tl_head.append(method)
-    # set_trace()
+
     compare_tl = DataFrame(np.array(compare_tl).T, columns=compare_tl_head, index=stats.index.sort_values())
     save_path_2 = os.path.join(os.path.abspath("/".join(var.split("/")[:-3])),
                                os.path.abspath("".join(var.split("/")[-3])) + ".xlsx")
     compare_tl.to_excel(save_path_2)
-    # set_trace()
 
 
 if __name__ == "__main__":
