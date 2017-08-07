@@ -15,6 +15,10 @@ import pandas
 from tabulate import tabulate
 
 
+import warnings
+warnings.filterwarnings("ignore")
+
+
 def weight_training(test_instance, training_instance):
     head = training_instance.columns
     new_train = training_instance[head[:-1]]
@@ -47,22 +51,21 @@ def bellw(source, target, n_rep=12, verbose=False):
     :return: result
     """
     result = dict()
+    stats = []
     for tgt_name, tgt_path in target.iteritems():
-        stats = []
         charts = []
         print("{} \r".format(tgt_name[0].upper() + tgt_name[1:]))
         val = []
         for src_name, src_path in source.iteritems():
             if src_name == "lucene":
                 if not src_name == tgt_name:
-
-                    src = list2dataframe(src_path.data)
+                    src = list2dataframe([src_path.data[-1]])
                     tgt = list2dataframe([tgt_path.data[-1]])
 
                     pd, pf, pr, f1, g, auc = [], [], [], [], [], []
                     for _ in xrange(n_rep):
-                        # _train, __test = weight_training(test_instance=tgt, training_instance=src)
-                        _train, __test = tgt, src
+                        _train, __test = weight_training(test_instance=tgt, training_instance=src)
+                        # _train, __test = tgt, src
                         actual, predicted, distribution = predict_defects(train=_train, test=__test)
                         p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual, predicted, distribution)
 
@@ -73,19 +76,20 @@ def bellw(source, target, n_rep=12, verbose=False):
                         g.append(_g)
                         auc.append(int(auroc))
 
-                    stats.append([src_name, int(np.mean(pd)), int(np.mean(pf)),
+                    stats.append([tgt_name, int(np.mean(pd)), int(np.mean(pf)),
                                   int(np.mean(pr)), int(np.mean(f1)),
                                   int(np.mean(g)), int(np.mean(auc))])  # ,
 
-        stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
+    stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
                                  columns=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"])  # ,
 
-        if verbose: print(tabulate(stats,
-                                   headers=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"],
-                                   showindex="never",
-                                   tablefmt="fancy_grid"))
+    # set_trace()
+    if verbose: print(tabulate(stats,
+                               headers=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"],
+                               showindex="never",
+                               tablefmt="fancy_grid"))
 
-        result.update({tgt_name: stats})
+    result.update({tgt_name: stats})
 
     return result
 
@@ -101,13 +105,12 @@ def bellw_local(source, target, n_rep=12, verbose=False):
     result = dict()
     stats=[]
     for name, data in target.iteritems():
-        train, test = data.data[-2], data.data[-1]
+        train, test = data.data[0], data.data[1]
         src = list2dataframe([train])
         tgt = list2dataframe([test])
         pd, pf, pr, f1, g, auc = [], [], [], [], [], []
         for _ in xrange(n_rep):
-            _train, __test = weight_training(test_instance=tgt, training_instance=src)
-            actual, predicted, distribution = predict_defects(train=_train, test=__test)
+            actual, predicted, distribution = predict_defects(train=src, test=tgt)
             p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual, predicted, distribution)
 
             pd.append(p_d)

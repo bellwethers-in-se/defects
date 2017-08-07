@@ -24,6 +24,9 @@ from plot.effort_plot import effort_plot
 from tabulate import tabulate
 # from plot.effort_plot import effort_plot
 
+import warnings
+warnings.filterwarnings("ignore")
+
 
 def get_kernel_matrix(dframe, n_dim=15):
     """
@@ -182,9 +185,9 @@ def tca_plus(source, target, n_rep=12):
     :return: result
     """
     result = dict()
+    stats = []
 
     for tgt_name, tgt_path in target.iteritems():
-        stats = []
         print("{}  \r".format(tgt_name[0].upper() + tgt_name[1:]))
         val = []
         for src_name, src_path in source.iteritems():
@@ -214,21 +217,14 @@ def tca_plus(source, target, n_rep=12):
 
                 stats.append([src_name, int(np.mean(pd)), int(np.std(pd)),
                               int(np.mean(pf)), int(np.std(pf)),
-                              int(np.mean(auc)), int(np.std(auc))])  # ,
+                              int(np.mean(g)), int(np.std(g))])  # ,
 
-        stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
-                                 columns=["Name", "Pd (Mean)", "Pd (Std)",
-                                          "Pf (Mean)", "Pf (Std)",
-                                          "AUC (Mean)", "AUC (Std)"])  # ,
-        # print(tabulate(stats,
-        #                headers=["Name", "Pd (Mean)", "Pd (Std)",
-        #                         "Pf (Mean)", "Pf (Std)",
-        #                         "AUC (Mean)", "AUC (Std)"],
-        #                showindex="never",
-        #                tablefmt="fancy_grid"))
+    stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
+                             columns=["Name", "Pd (Mean)", "Pd (Std)",
+                                      "Pf (Mean)", "Pf (Std)",
+                                      "AUC (Mean)", "AUC (Std)"])  # ,
 
-        result.update({tgt_name: stats})
-    return result
+    return stats
 
 
 def tca_plus_bellw(source, target, n_rep=12):
@@ -241,8 +237,8 @@ def tca_plus_bellw(source, target, n_rep=12):
     """
     result = dict()
 
+    stats = []
     for tgt_name, tgt_path in target.iteritems():
-        stats = []
         print("{}  \r".format(tgt_name[0].upper() + tgt_name[1:]))
         val = []
         for src_name, src_path in source.iteritems():
@@ -271,23 +267,15 @@ def tca_plus_bellw(source, target, n_rep=12):
                         g.append(_g)
                         auc.append(int(auroc))
 
-                    stats.append([src_name, int(np.mean(pd)), int(np.std(pd)),
+                    stats.append([tgt_name, int(np.mean(pd)), int(np.std(pd)),
                                   int(np.mean(pf)), int(np.std(pf)),
                                   int(np.mean(g)), int(np.std(g))])  # ,
 
-        stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
-                                 columns=["Name", "Pd (Mean)", "Pd (Std)",
-                                          "Pf (Mean)", "Pf (Std)",
-                                          "g (Mean)", "g (Std)"])  # ,
-        # print(tabulate(stats,
-        #                headers=["Name", "Pd (Mean)", "Pd (Std)",
-        #                         "Pf (Mean)", "Pf (Std)",
-        #                         "AUC (Mean)", "AUC (Std)"],
-        #                showindex="never",
-        #                tablefmt="fancy_grid"))
-
-        result.update({tgt_name: stats})
-    return result
+    stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
+                             columns=["Name", "Pd (Mean)", "Pd (Std)",
+                                      "Pf (Mean)", "Pf (Std)",
+                                      "g (Mean)", "g (Std)"])  # ,
+    return stats
 
 
 def tca_jur():
