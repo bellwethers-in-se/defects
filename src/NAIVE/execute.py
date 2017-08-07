@@ -53,27 +53,29 @@ def bellw(source, target, n_rep=12, verbose=False):
         print("{} \r".format(tgt_name[0].upper() + tgt_name[1:]))
         val = []
         for src_name, src_path in source.iteritems():
-            if not src_name == tgt_name:
+            if src_name == "lucene":
+                if not src_name == tgt_name:
 
-                src = list2dataframe(src_path.data)
-                tgt = list2dataframe(tgt_path.data)
+                    src = list2dataframe(src_path.data)
+                    tgt = list2dataframe([tgt_path.data[-1]])
 
-                pd, pf, pr, f1, g, auc = [], [], [], [], [], []
-                for _ in xrange(n_rep):
-                    _train, __test = weight_training(test_instance=tgt, training_instance=src)
-                    actual, predicted, distribution = predict_defects(train=_train, test=__test)
-                    p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual, predicted, distribution)
+                    pd, pf, pr, f1, g, auc = [], [], [], [], [], []
+                    for _ in xrange(n_rep):
+                        # _train, __test = weight_training(test_instance=tgt, training_instance=src)
+                        _train, __test = tgt, src
+                        actual, predicted, distribution = predict_defects(train=_train, test=__test)
+                        p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual, predicted, distribution)
 
-                    pd.append(p_d)
-                    pf.append(p_f)
-                    pr.append(p_r)
-                    f1.append(f_1)
-                    g.append(_g)
-                    auc.append(int(auroc))
+                        pd.append(p_d)
+                        pf.append(p_f)
+                        pr.append(p_r)
+                        f1.append(f_1)
+                        g.append(_g)
+                        auc.append(int(auroc))
 
-                stats.append([src_name, int(np.mean(pd)), int(np.mean(pf)),
-                              int(np.mean(pr)), int(np.mean(f1)),
-                              int(np.mean(g)), int(np.mean(auc))])  # ,
+                    stats.append([src_name, int(np.mean(pd)), int(np.mean(pf)),
+                                  int(np.mean(pr)), int(np.mean(f1)),
+                                  int(np.mean(g)), int(np.mean(auc))])  # ,
 
         stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
                                  columns=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"])  # ,
@@ -88,13 +90,51 @@ def bellw(source, target, n_rep=12, verbose=False):
     return result
 
 
-def tnb_jur():
+def bellw_local(source, target, n_rep=12, verbose=False):
+    """
+    TNB: Transfer Naive Bayes
+    :param source:
+    :param target:
+    :param n_rep: number of repeats
+    :return: result
+    """
+    result = dict()
+    stats=[]
+    for name, data in target.iteritems():
+        train, test = data.data[-2], data.data[-1]
+        src = list2dataframe([train])
+        tgt = list2dataframe([test])
+        pd, pf, pr, f1, g, auc = [], [], [], [], [], []
+        for _ in xrange(n_rep):
+            _train, __test = weight_training(test_instance=tgt, training_instance=src)
+            actual, predicted, distribution = predict_defects(train=_train, test=__test)
+            p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual, predicted, distribution)
+
+            pd.append(p_d)
+            pf.append(p_f)
+            pr.append(p_r)
+            f1.append(f_1)
+            g.append(_g)
+            auc.append(int(auroc))
+
+        stats.append([name, int(np.mean(pd)), int(np.mean(pf)),
+                      int(np.mean(pr)), int(np.mean(f1)),
+                      int(np.mean(g)), int(np.mean(auc))])  # ,
+
+    stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
+                             columns=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"])
+
+    return stats
+
+
+
+def bellw_jur():
     from data.handler import get_all_projects
     all = get_all_projects()
-    # set_trace()
+    set_trace()
     apache = all["Apache"]
     return bellw(apache, apache, n_rep=10)
 
 
 if __name__ == "__main__":
-    tnb_jur()
+    bellw_jur()

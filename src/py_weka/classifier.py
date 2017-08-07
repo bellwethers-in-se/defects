@@ -5,9 +5,6 @@ from pdb import set_trace
 from time import time
 
 import pandas as pd
-import weka.core.converters as converters
-import weka.core.jvm as jvm
-from weka.classifiers import Classifier
 from utils import list2dataframe
 from tuner.devol import tune, default_opt, weka_instance
 

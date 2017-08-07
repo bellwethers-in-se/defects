@@ -58,7 +58,7 @@ def map_transform(src, tgt, n_components=5):
     col_name = ["Col_" + str(i) for i in xrange(n_components)]
     x0 = pd.DataFrame(get_kernel_matrix(S, n_components), columns=col_name)
     y0 = pd.DataFrame(get_kernel_matrix(T, n_components), columns=col_name)
-    set_trace()
+    # set_trace()
     x0.loc[:, src.columns[-1]] = pd.Series(src[src.columns[-1]], index=x0.index)
     y0.loc[:, tgt.columns[-1]] = pd.Series(tgt[tgt.columns[-1]], index=y0.index)
 
@@ -169,7 +169,7 @@ def smart_norm(src, tgt, c_s, c_t):
         else:
             return df_norm(src, type="normal"), df_norm(tgt, type="normal")
     except:
-        set_trace()
+        # set_trace()
         return src, tgt
 
 
@@ -220,12 +220,71 @@ def tca_plus(source, target, n_rep=12):
                                  columns=["Name", "Pd (Mean)", "Pd (Std)",
                                           "Pf (Mean)", "Pf (Std)",
                                           "AUC (Mean)", "AUC (Std)"])  # ,
-        print(tabulate(stats,
-                       headers=["Name", "Pd (Mean)", "Pd (Std)",
-                                "Pf (Mean)", "Pf (Std)",
-                                "AUC (Mean)", "AUC (Std)"],
-                       showindex="never",
-                       tablefmt="fancy_grid"))
+        # print(tabulate(stats,
+        #                headers=["Name", "Pd (Mean)", "Pd (Std)",
+        #                         "Pf (Mean)", "Pf (Std)",
+        #                         "AUC (Mean)", "AUC (Std)"],
+        #                showindex="never",
+        #                tablefmt="fancy_grid"))
+
+        result.update({tgt_name: stats})
+    return result
+
+
+def tca_plus_bellw(source, target, n_rep=12):
+    """
+    TCA: Transfer Component Analysis
+    :param source:
+    :param target:
+    :param n_rep: number of repeats
+    :return: result
+    """
+    result = dict()
+
+    for tgt_name, tgt_path in target.iteritems():
+        stats = []
+        print("{}  \r".format(tgt_name[0].upper() + tgt_name[1:]))
+        val = []
+        for src_name, src_path in source.iteritems():
+            if src_name == 'lucene':
+                if not src_name == tgt_name:
+                    print("{}  \r".format(src_name[0].upper() + src_name[1:]))
+                    src = list2dataframe(src_path.data)
+                    tgt = list2dataframe(tgt_path.data)
+                    pd, pf, g, auc = [], [], [], []
+                    dcv_src, dcv_tgt = get_dcv(src, tgt)
+
+                    for _ in xrange(n_rep):
+                        recall, loc = None, None
+                        norm_src, norm_tgt = smart_norm(src, tgt, dcv_src, dcv_tgt)
+                        _train, __test = map_transform(norm_src, norm_tgt)
+
+                        try:
+                            actual, predicted, distribution = predict_defects(train=_train, test=__test)
+                        except:
+                            set_trace()
+
+                        p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual, predicted, distribution)
+
+                        pd.append(p_d)
+                        pf.append(p_f)
+                        g.append(_g)
+                        auc.append(int(auroc))
+
+                    stats.append([src_name, int(np.mean(pd)), int(np.std(pd)),
+                                  int(np.mean(pf)), int(np.std(pf)),
+                                  int(np.mean(g)), int(np.std(g))])  # ,
+
+        stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
+                                 columns=["Name", "Pd (Mean)", "Pd (Std)",
+                                          "Pf (Mean)", "Pf (Std)",
+                                          "g (Mean)", "g (Std)"])  # ,
+        # print(tabulate(stats,
+        #                headers=["Name", "Pd (Mean)", "Pd (Std)",
+        #                         "Pf (Mean)", "Pf (Std)",
+        #                         "AUC (Mean)", "AUC (Std)"],
+        #                showindex="never",
+        #                tablefmt="fancy_grid"))
 
         result.update({tgt_name: stats})
     return result

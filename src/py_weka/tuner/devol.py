@@ -8,12 +8,12 @@ if root not in sys.path:
     sys.path.append(root)
 
 import pandas as pd
-import weka.core.jvm as jvm
+# import weka.core.jvm as jvm
 from utils import list2dataframe
-from weka.classifiers import Classifier
-import weka.core.converters as converters
+# from weka.classifiers import Classifier
+# import weka.core.converters as converters
 from random import uniform, randint, sample, choice, random as rand
-from weka.experiments import SimpleCrossValidationExperiment, Tester, ResultMatrix
+# from weka.experiments import SimpleCrossValidationExperiment, Tester, ResultMatrix
 from pdb import set_trace
 
 default_opt = [u'-P', u'50', u'-I', u'500', u'-M', u'6.0', u'-V', u'0.01']
