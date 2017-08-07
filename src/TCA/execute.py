@@ -188,11 +188,11 @@ def tca_plus(source, target, n_rep=12):
     stats = []
 
     for tgt_name, tgt_path in target.iteritems():
-        print("{}  \r".format(tgt_name[0].upper() + tgt_name[1:]))
+        print("TCA+ ")
         val = []
         for src_name, src_path in source.iteritems():
             if not src_name == tgt_name:
-                print("{}  \r".format(src_name[0].upper() + src_name[1:]))
+                # print("{}  \r".format(src_name[0].upper() + src_name[1:]))
                 src = list2dataframe(src_path.data)
                 tgt = list2dataframe(tgt_path.data)
                 pd, pf, g, auc = [], [], [], []
@@ -239,12 +239,11 @@ def tca_plus_bellw(source, target, n_rep=12):
 
     stats = []
     for tgt_name, tgt_path in target.iteritems():
-        print("{}  \r".format(tgt_name[0].upper() + tgt_name[1:]))
+        print("TCA Plus")
         val = []
         for src_name, src_path in source.iteritems():
             if src_name == 'lucene':
                 if not src_name == tgt_name:
-                    print("{}  \r".format(src_name[0].upper() + src_name[1:]))
                     src = list2dataframe(src_path.data)
                     tgt = list2dataframe(tgt_path.data)
                     pd, pf, g, auc = [], [], [], []
@@ -275,6 +274,12 @@ def tca_plus_bellw(source, target, n_rep=12):
                              columns=["Name", "Pd (Mean)", "Pd (Std)",
                                       "Pf (Mean)", "Pf (Std)",
                                       "g (Mean)", "g (Std)"])  # ,
+    print(tabulate(stats
+                   , headers=["Name", "Pd (Mean)", "Pd (Std)",
+                                      "Pf (Mean)", "Pf (Std)",
+                                      "g (Mean)", "g (Std)"]
+                   , tablefmt="fancy_grid"))
+
     return stats
 
 

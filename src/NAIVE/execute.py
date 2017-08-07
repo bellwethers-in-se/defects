@@ -52,9 +52,10 @@ def bellw(source, target, n_rep=12, verbose=False):
     """
     result = dict()
     stats = []
+    print("Bellwether")
     for tgt_name, tgt_path in target.iteritems():
         charts = []
-        print("{} \r".format(tgt_name[0].upper() + tgt_name[1:]))
+        # print("{} \r".format(tgt_name[0].upper() + tgt_name[1:]))
         val = []
         for src_name, src_path in source.iteritems():
             if src_name == "lucene":
@@ -81,13 +82,12 @@ def bellw(source, target, n_rep=12, verbose=False):
                                   int(np.mean(g)), int(np.mean(auc))])  # ,
 
     stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
-                                 columns=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"])  # ,
+                             columns=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"])  # ,
 
     # set_trace()
-    if verbose: print(tabulate(stats,
-                               headers=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"],
-                               showindex="never",
-                               tablefmt="fancy_grid"))
+    print(tabulate(stats
+                   , headers=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"]
+                   , tablefmt="fancy_grid"))
 
     result.update({tgt_name: stats})
 
@@ -102,6 +102,7 @@ def bellw_local(source, target, n_rep=12, verbose=False):
     :param n_rep: number of repeats
     :return: result
     """
+    print("Local")
     result = dict()
     stats=[]
     for name, data in target.iteritems():
@@ -126,6 +127,10 @@ def bellw_local(source, target, n_rep=12, verbose=False):
 
     stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
                              columns=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"])
+
+    print(tabulate(stats
+                   , headers=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"]
+                   , tablefmt="fancy_grid"))
 
     return stats
 
