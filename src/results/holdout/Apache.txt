@@ -1,0 +1,120 @@
+Holdout: ant
+       Name  Pd  Pf  Prec  F1  AUC   G
+0    lucene  58  26    57  52   65  70
+1       poi  55  26    58  50   63  67
+2       ivy  49  24    63  50   60  65
+3     camel  47  25    61  48   59  64
+4    xerces  41  21    53  41   56  62
+5  velocity  44  26    57  43   56  64
+6     jedit  35  24    59  39   50  54
+7     log4j  29  20    49  34   46  54
+8     xalan  20  10    40  25   29  63
+-----
+Holdout: lucene
+       Name  Pd  Pf  Prec  F1  AUC   G
+0       poi  55  24    53  47   64  67
+1       ivy  54  24    60  50   63  68
+2     camel  49  25    57  47   60  65
+3       ant  48  24    56  43   59  63
+4  velocity  48  26    54  44   59  65
+5    xerces  42  22    49  39   57  63
+6     jedit  36  23    56  37   51  55
+7     log4j  24  20    41  26   42  51
+8     xalan  19   7    31  22   26  64
+-----
+Holdout: jedit
+       Name  Pd  Pf  Prec  F1  AUC   G
+0    lucene  58  25    62  56   65  71
+1       poi  55  24    62  53   63  68
+2       ivy  52  24    68  56   62  67
+3       ant  49  22    66  52   61  66
+4     camel  48  25    66  52   59  65
+5  velocity  47  25    62  48   58  66
+6    xerces  43  22    58  46   57  63
+7     log4j  30  20    51  35   47  56
+8     xalan  22   9    42  28   32  66
+-----
+Holdout: xerces
+       Name  Pd  Pf  Prec  F1  AUC   G
+0    lucene  57  25    51  49   65  70
+1       poi  57  25    52  49   64  69
+2       ivy  55  23    59  51   64  68
+3       ant  53  23    56  47   62  66
+4     camel  48  25    55  45   59  64
+5  velocity  48  26    52  42   58  65
+6     jedit  41  23    57  42   55  59
+7     log4j  24  21    39  27   41  53
+8     xalan  20   9    32  23   29  65
+-----
+Holdout: xalan
+       Name  Pd  Pf  Prec  F1  AUC   G
+0       poi  56  27    50  47   63  67
+1    lucene  52  26    50  45   61  67
+2       ivy  49  24    57  46   60  65
+3       ant  46  24    54  41   58  63
+4     camel  45  24    54  43   58  63
+5    xerces  42  24    46  39   55  62
+6  velocity  42  25    50  39   55  64
+7     jedit  35  25    50  35   49  54
+8     log4j  23  20    38  24   42  54
+-----
+Holdout: camel
+       Name  Pd  Pf  Prec  F1  AUC   G
+0    lucene  58  26    59  52   65  70
+1       poi  56  24    59  50   64  68
+2       ivy  55  24    65  54   64  69
+3       ant  51  25    63  48   60  64
+4    xerces  45  22    54  43   58  63
+5  velocity  48  26    59  46   58  65
+6     jedit  38  23    62  42   52  57
+7     log4j  26  20    48  30   44  53
+8     xalan  21   9    37  24   30  65
+-----
+Holdout: velocity
+     Name  Pd  Pf  Prec  F1  AUC   G
+0  lucene  59  26    57  51   65  70
+1     poi  58  25    57  51   65  69
+2     ivy  53  24    62  51   63  67
+3     ant  49  23    60  46   60  65
+4   camel  50  25    60  48   60  64
+5  xerces  45  21    53  43   58  64
+6   jedit  38  24    58  40   52  56
+7   log4j  26  21    47  30   42  52
+8   xalan  24  10    41  28   33  64
+-----
+Holdout: poi
+       Name  Pd  Pf  Prec  F1  AUC   G
+0    lucene  56  25    52  48   64  70
+1       ivy  52  23    59  49   62  67
+2       ant  49  23    56  44   60  64
+3     camel  49  24    57  47   60  65
+4  velocity  50  26    54  45   60  66
+5    xerces  37  21    48  35   54  60
+6     jedit  38  24    54  39   52  56
+7     log4j  24  19    43  26   42  50
+8     xalan  18   8    33  21   26  64
+-----
+Holdout: log4j
+       Name  Pd  Pf  Prec  F1  AUC   G
+0       poi  59  26    51  50   66  70
+1    lucene  56  26    50  49   63  70
+2       ivy  54  23    57  50   63  67
+3       ant  51  24    54  46   61  65
+4     camel  51  26    54  48   61  65
+5    xerces  44  22    46  41   58  64
+6  velocity  48  26    50  44   58  66
+7     jedit  39  24    51  40   53  56
+8     xalan  22  10    35  25   31  65
+-----
+Holdout: ivy
+       Name  Pd  Pf  Prec  F1  AUC   G
+0    lucene  58  25    60  54   65  69
+1       poi  53  24    59  50   63  66
+2     camel  48  25    64  50   59  63
+3       ant  46  24    62  46   57  62
+4  velocity  46  26    59  46   57  64
+5    xerces  41  22    55  42   56  62
+6     jedit  34  24    60  40   49  54
+7     log4j  27  21    49  32   44  52
+8     xalan  17   8    37  22   25  62
+-----

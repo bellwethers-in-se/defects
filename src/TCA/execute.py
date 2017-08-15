@@ -25,6 +25,7 @@ from tabulate import tabulate
 # from plot.effort_plot import effort_plot
 
 import warnings
+
 warnings.filterwarnings("ignore")
 
 
@@ -116,9 +117,11 @@ def get_dcv(src, tgt):
     dist_src = self_dist_mtx(S.values)
     dist_tgt = self_dist_mtx(T.values)
 
-    dcv_src = [np.mean(dist_src), np.median(dist_src), np.min(dist_src), np.max(dist_src), np.std(dist_src),
+    dcv_src = [np.mean(dist_src), np.median(dist_src), np.min(dist_src),
+               np.max(dist_src), np.std(dist_src),
                len(S.values)]
-    dcv_tgt = [np.mean(dist_tgt), np.median(dist_tgt), np.min(dist_tgt), np.max(dist_tgt), np.std(dist_tgt),
+    dcv_tgt = [np.mean(dist_tgt), np.median(dist_tgt), np.min(dist_tgt),
+               np.max(dist_tgt), np.std(dist_tgt),
                len(T.values)]
     return dcv_src, dcv_tgt
 
@@ -162,12 +165,14 @@ def smart_norm(src, tgt, c_s, c_t):
 
         # Rule 3.1
         elif sim(c_s, c_t, e=-2) == "VH" and c_s[-1] > c_t[-1] or \
-                                sim(c_s, c_t, e=-2) == "VL" and c_s[-1] < c_t[-1]:
+                                sim(c_s, c_t, e=-2) == "VL" and c_s[-1] < c_t[
+                    -1]:
             return df_norm(src, type="normal"), df_norm(tgt)
 
         # Rule 4
         elif sim(c_s, c_t, e=-2) == "VH" and c_s[-1] < c_t[-1] or \
-                                sim(c_s, c_t, e=-2) == "VL" and c_s[-1] > c_t[-1]:
+                                sim(c_s, c_t, e=-2) == "VL" and c_s[-1] > c_t[
+                    -1]:
             return df_norm(src), df_norm(tgt, type="normal")
         else:
             return df_norm(src, type="normal"), df_norm(tgt, type="normal")
@@ -204,11 +209,14 @@ def tca_plus(source, target, n_rep=12):
                     _train, __test = map_transform(norm_src, norm_tgt)
 
                     try:
-                        actual, predicted, distribution = predict_defects(train=_train, test=__test)
+                        actual, predicted, distribution = predict_defects(
+                            train=_train, test=__test)
                     except:
                         set_trace()
 
-                    p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual, predicted, distribution)
+                    p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual,
+                                                                  predicted,
+                                                                  distribution)
 
                     pd.append(p_d)
                     pf.append(p_f)
@@ -217,12 +225,13 @@ def tca_plus(source, target, n_rep=12):
 
                 stats.append([src_name, int(np.mean(pd)), int(np.std(pd)),
                               int(np.mean(pf)), int(np.std(pf)),
-                              int(np.mean(g)), int(np.std(g))])  # ,
+                              int(np.mean(g)), int(np.std(g))])
 
-    stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
-                             columns=["Name", "Pd (Mean)", "Pd (Std)",
-                                      "Pf (Mean)", "Pf (Std)",
-                                      "AUC (Mean)", "AUC (Std)"])  # ,
+    stats = pandas.DataFrame(
+        sorted(stats, key=lambda lst: lst[0], reverse=True),
+        columns=["Name", "Pd (Mean)", "Pd (Std)",
+                 "Pf (Mean)", "Pf (Std)",
+                 "AUC (Mean)", "AUC (Std)"])  # ,
 
     return stats
 
@@ -236,30 +245,33 @@ def tca_plus_bellw(source, target, n_rep=12):
     :return: result
     """
     result = dict()
-
+    print("TCA Plus")
     stats = []
     for tgt_name, tgt_path in target.iteritems():
-        print("TCA Plus")
         val = []
         for src_name, src_path in source.iteritems():
             if src_name == 'lucene':
                 if not src_name == tgt_name:
-                    src = list2dataframe(src_path.data)
-                    tgt = list2dataframe(tgt_path.data)
+                    src = list2dataframe([src_path.data[-1]])
+                    tgt = list2dataframe([tgt_path.data[-1]])
                     pd, pf, g, auc = [], [], [], []
                     dcv_src, dcv_tgt = get_dcv(src, tgt)
 
                     for _ in xrange(n_rep):
                         recall, loc = None, None
-                        norm_src, norm_tgt = smart_norm(src, tgt, dcv_src, dcv_tgt)
+                        norm_src, norm_tgt = smart_norm(src, tgt, dcv_src,
+                                                        dcv_tgt)
                         _train, __test = map_transform(norm_src, norm_tgt)
 
                         try:
-                            actual, predicted, distribution = predict_defects(train=_train, test=__test)
+                            actual, predicted, distribution = predict_defects(
+                                train=_train, test=__test)
                         except:
                             set_trace()
 
-                        p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual, predicted, distribution)
+                        p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual,
+                                                                      predicted,
+                                                                      distribution)
 
                         pd.append(p_d)
                         pf.append(p_f)
@@ -270,14 +282,15 @@ def tca_plus_bellw(source, target, n_rep=12):
                                   int(np.mean(pf)), int(np.std(pf)),
                                   int(np.mean(g)), int(np.std(g))])  # ,
 
-    stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
-                             columns=["Name", "Pd (Mean)", "Pd (Std)",
-                                      "Pf (Mean)", "Pf (Std)",
-                                      "g (Mean)", "g (Std)"])  # ,
+    stats = pandas.DataFrame(
+        sorted(stats, key=lambda lst: lst[-2], reverse=True),  # Sort by G Score
+        columns=["Name", "Pd (Mean)", "Pd (Std)",
+                 "Pf (Mean)", "Pf (Std)",
+                 "g (Mean)", "g (Std)"])  # ,
     print(tabulate(stats
                    , headers=["Name", "Pd (Mean)", "Pd (Std)",
-                                      "Pf (Mean)", "Pf (Std)",
-                                      "g (Mean)", "g (Std)"]
+                              "Pf (Mean)", "Pf (Std)",
+                              "g (Mean)", "g (Std)"]
                    , tablefmt="fancy_grid"))
 
     return stats
