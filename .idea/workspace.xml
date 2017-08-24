@@ -2,9 +2,132 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c36a38f-69e4-4b2a-abbf-42430cd71a20" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../issueCloseTime/src/run_all_loo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../smells/src/run_all_loo.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/180 days/camel.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/180 days/cloudstack.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/180 days/cocoon.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/180 days/deeplearning.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/180 days/hadoop.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/180 days/hive.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/180 days/node.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/180 days/ofbiz.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/180 days/qpid.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/365 days/camel.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/365 days/cloudstack.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/365 days/cocoon.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/365 days/deeplearning.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/365 days/hadoop.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/365 days/hive.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/365 days/node.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/365 days/ofbiz.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/365 days/qpid.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/90 days/camel.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/90 days/cloudstack.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/90 days/cocoon.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/90 days/deeplearning.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/90 days/hadoop.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/90 days/hive.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/90 days/node.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/90 days/ofbiz.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../issueCloseTime/src/datasets/90 days/qpid.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/aoi-2.8.1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/drjava-stable-20100913-r5387.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/exoportal-v1.0.2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/fitjava-1.1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/fitlibraryforfitnesse-20100806.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/freecol-0.10.3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/galleon-2.3.0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/hsqldb-2.0.0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/itext-5.0.3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/jpf-1.0.2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/mvnforum-1.2.2-ga.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/wct-1.5.2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/xalan-2.7.1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/class/xerces-2.10.0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/aoi-2.8.1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/emma-2.0.5312.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/galleon-2.3.0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/hsqldb-2.0.0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/itext-5.0.3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/jasml-0.10.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/jhotdraw-7.5.1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/mvnforum-1.2.2-ga.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/nekohtml-1.9.14.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/sunflow-0.07.2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/wct-1.5.2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../smells/src/datasets/method/xmojo-5.0.0.csv" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/DataClass/drjava-stable-20100913-r5387.csv" afterPath="$PROJECT_DIR$/../smells/src/data/DataClass/drjava-stable-20100913-r5387.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/DataClass/exoportal-v1.0.2.csv" afterPath="$PROJECT_DIR$/../smells/src/data/DataClass/exoportal-v1.0.2.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/DataClass/fitlibraryforfitnesse-20100806.csv" afterPath="$PROJECT_DIR$/../smells/src/data/DataClass/fitlibraryforfitnesse-20100806.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/DataClass/galleon-2.3.0.csv" afterPath="$PROJECT_DIR$/../smells/src/data/DataClass/galleon-2.3.0.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/DataClass/hsqldb-2.0.0.csv" afterPath="$PROJECT_DIR$/../smells/src/data/DataClass/hsqldb-2.0.0.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/DataClass/itext-5.0.3.csv" afterPath="$PROJECT_DIR$/../smells/src/data/DataClass/itext-5.0.3.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/DataClass/mvnforum-1.2.2-ga.csv" afterPath="$PROJECT_DIR$/../smells/src/data/DataClass/mvnforum-1.2.2-ga.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/DataClass/wct-1.5.2.csv" afterPath="$PROJECT_DIR$/../smells/src/data/DataClass/wct-1.5.2.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/DataClass/xalan-2.7.1.csv" afterPath="$PROJECT_DIR$/../smells/src/data/DataClass/xalan-2.7.1.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/DataClass/xerces-2.10.0.csv" afterPath="$PROJECT_DIR$/../smells/src/data/DataClass/xerces-2.10.0.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/emma-2.0.5312.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/emma-2.0.5312.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/galleon-2.3.0.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/galleon-2.3.0.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/hsqldb-2.0.0.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/hsqldb-2.0.0.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/itext-5.0.3.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/itext-5.0.3.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/jasml-0.10.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/jasml-0.10.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/jhotdraw-7.5.1.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/jhotdraw-7.5.1.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/mvnforum-1.2.2-ga.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/mvnforum-1.2.2-ga.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/nekohtml-1.9.14.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/nekohtml-1.9.14.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/sunflow-0.07.2.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/sunflow-0.07.2.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/wct-1.5.2.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/wct-1.5.2.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../smells/src/datasets/LongMethod/xmojo-5.0.0.csv" afterPath="$PROJECT_DIR$/../smells/src/data/LongMethod/xmojo-5.0.0.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/defects.iml" afterPath="$PROJECT_DIR$/.idea/defects.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Incremental/execute.py" afterPath="$PROJECT_DIR$/src/Incremental/execute.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NAIVE/execute.py" afterPath="$PROJECT_DIR$/src/NAIVE/execute.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TCA/execute.py" afterPath="$PROJECT_DIR$/src/TCA/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TNB/execute.py" afterPath="$PROJECT_DIR$/src/TNB/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VCBoost/execute.py" afterPath="$PROJECT_DIR$/src/VCBoost/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WHICH/tnb.py" afterPath="$PROJECT_DIR$/src/WHICH/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/run_all_loo.py" afterPath="$PROJECT_DIR$/src/run_all_loo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../effort/src/TCA/tca_plus.py" afterPath="$PROJECT_DIR$/../effort/src/TCA/tca_plus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../effort/src/TNB/tnb.py" afterPath="$PROJECT_DIR$/../effort/src/TNB/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../effort/src/VCBoost/execute.py" afterPath="$PROJECT_DIR$/../effort/src/VCBoost/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../effort/tests/src/NAIVE/execute.py" afterPath="$PROJECT_DIR$/../effort/tests/src/NAIVE/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../effort/tests/src/TCA/execute.py" afterPath="$PROJECT_DIR$/../effort/tests/src/TCA/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../effort/tests/src/TCA/tca_plus.py" afterPath="$PROJECT_DIR$/../effort/tests/src/TCA/tca_plus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../effort/tests/src/TNB/execute.py" afterPath="$PROJECT_DIR$/../effort/tests/src/TNB/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../effort/tests/src/TNB/tnb.py" afterPath="$PROJECT_DIR$/../effort/tests/src/TNB/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../effort/tests/src/VCBoost/execute.py" afterPath="$PROJECT_DIR$/../effort/tests/src/VCBoost/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../effort/tests/src/WHICH/tnb.py" afterPath="$PROJECT_DIR$/../effort/tests/src/WHICH/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/src/NAIVE/execute.py" afterPath="$PROJECT_DIR$/../issueCloseTime/src/NAIVE/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/src/TCA/execute.py" afterPath="$PROJECT_DIR$/../issueCloseTime/src/TCA/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/src/TCA/tca_plus.py" afterPath="$PROJECT_DIR$/../issueCloseTime/src/TCA/tca_plus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/src/TNB/execute.py" afterPath="$PROJECT_DIR$/../issueCloseTime/src/TNB/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/src/TNB/tnb.py" afterPath="$PROJECT_DIR$/../issueCloseTime/src/TNB/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/src/VCBoost/execute.py" afterPath="$PROJECT_DIR$/../issueCloseTime/src/VCBoost/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/src/WHICH/tnb.py" afterPath="$PROJECT_DIR$/../issueCloseTime/src/WHICH/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/src/metrics/abcd.py" afterPath="$PROJECT_DIR$/../issueCloseTime/src/metrics/abcd.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/tests/src/NAIVE/execute.py" afterPath="$PROJECT_DIR$/../issueCloseTime/tests/src/NAIVE/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/tests/src/TCA/execute.py" afterPath="$PROJECT_DIR$/../issueCloseTime/tests/src/TCA/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/tests/src/TCA/tca_plus.py" afterPath="$PROJECT_DIR$/../issueCloseTime/tests/src/TCA/tca_plus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/tests/src/TNB/execute.py" afterPath="$PROJECT_DIR$/../issueCloseTime/tests/src/TNB/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/tests/src/TNB/tnb.py" afterPath="$PROJECT_DIR$/../issueCloseTime/tests/src/TNB/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/tests/src/VCBoost/execute.py" afterPath="$PROJECT_DIR$/../issueCloseTime/tests/src/VCBoost/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../issueCloseTime/tests/src/WHICH/tnb.py" afterPath="$PROJECT_DIR$/../issueCloseTime/tests/src/WHICH/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/src/NAIVE/execute.py" afterPath="$PROJECT_DIR$/../smells/src/NAIVE/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/src/TCA/execute.py" afterPath="$PROJECT_DIR$/../smells/src/TCA/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/src/TCA/tca_plus.py" afterPath="$PROJECT_DIR$/../smells/src/TCA/tca_plus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/src/TNB/execute.py" afterPath="$PROJECT_DIR$/../smells/src/TNB/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/src/TNB/tnb.py" afterPath="$PROJECT_DIR$/../smells/src/TNB/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/src/VCBoost/execute.py" afterPath="$PROJECT_DIR$/../smells/src/VCBoost/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/src/WHICH/tnb.py" afterPath="$PROJECT_DIR$/../smells/src/WHICH/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/tests/src/NAIVE/execute.py" afterPath="$PROJECT_DIR$/../smells/tests/src/NAIVE/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/tests/src/TCA/execute.py" afterPath="$PROJECT_DIR$/../smells/tests/src/TCA/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/tests/src/TCA/tca_plus.py" afterPath="$PROJECT_DIR$/../smells/tests/src/TCA/tca_plus.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/tests/src/TNB/execute.py" afterPath="$PROJECT_DIR$/../smells/tests/src/TNB/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/tests/src/TNB/tnb.py" afterPath="$PROJECT_DIR$/../smells/tests/src/TNB/tnb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/tests/src/VCBoost/execute.py" afterPath="$PROJECT_DIR$/../smells/tests/src/VCBoost/execute.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../smells/tests/src/WHICH/tnb.py" afterPath="$PROJECT_DIR$/../smells/tests/src/WHICH/tnb.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,6 +145,7 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
@@ -35,21 +159,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="execute.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/TCA/execute.py">
+      <file leaf-file-name="run_all_loo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/run_all_loo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="281" column="45" lean-forward="true" selection-start-line="281" selection-start-column="45" selection-end-line="281" selection-end-column="45" />
+            <state relative-caret-position="513">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_local.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/run_local.py">
+      <file leaf-file-name="execute.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Incremental/execute.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+            <state relative-caret-position="838">
+              <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -57,33 +181,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classifier.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/py_weka/classifier.py">
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Incremental/prediction/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tca_vs_bellwether.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tca_vs_bellwether.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="execute.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/NAIVE/execute.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-388">
-              <caret line="88" column="49" lean-forward="true" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
+            <state relative-caret-position="342">
+              <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,11 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/results/apache/vcb/ant.csv" />
-        <option value="$PROJECT_DIR$/src/results/apache/vcb/camel.csv" />
-        <option value="$PROJECT_DIR$/src/results/apache/vcb/ivy.csv" />
-        <option value="$PROJECT_DIR$/src/results/apache/bell/ant.csv" />
-        <option value="$PROJECT_DIR$/src/results/apache/vcb/jedit.csv" />
         <option value="$PROJECT_DIR$/src/results/apache/vcb/log4j.csv" />
         <option value="$PROJECT_DIR$/src/results/apache/vcb/lucene.csv" />
         <option value="$PROJECT_DIR$/src/results/apache/vcb/velocity.csv" />
@@ -158,8 +257,16 @@
         <option value="$PROJECT_DIR$/src/py_weka/tuner/devol.py" />
         <option value="$PROJECT_DIR$/src/py_weka/classifier.py" />
         <option value="$PROJECT_DIR$/src/run_local.py" />
-        <option value="$PROJECT_DIR$/src/NAIVE/execute.py" />
+        <option value="$PROJECT_DIR$/src/run_all_loo.py" />
         <option value="$PROJECT_DIR$/src/TCA/execute.py" />
+        <option value="$PROJECT_DIR$/src/NAIVE/execute.py" />
+        <option value="$PROJECT_DIR$/../smells/src/run_all_loo.py" />
+        <option value="$PROJECT_DIR$/../smells/src/NAIVE/execute.py" />
+        <option value="$PROJECT_DIR$/../issueCloseTime/src/NAIVE/execute.py" />
+        <option value="$PROJECT_DIR$/../issueCloseTime/src/run_all_loo.py" />
+        <option value="$PROJECT_DIR$/../issueCloseTime/src/TNB/execute.py" />
+        <option value="$PROJECT_DIR$/../issueCloseTime/src/metrics/abcd.py" />
+        <option value="$PROJECT_DIR$/src/Incremental/execute.py" />
       </list>
     </option>
   </component>
@@ -170,11 +277,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="width" value="1149" />
+    <option name="height" value="1080" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -192,8 +298,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -234,7 +340,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="TCA" />
+              <option name="myItemId" value="Incremental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="defects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="defects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Incremental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="prediction" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -254,11 +382,19 @@
     <property name="node.js.selected.package.eslint" value="" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.sylvanaar.idea.Lua.options.LuaOptionsPanel" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/" />
+      <recent name="$PROJECT_DIR$/src/NAIVE" />
+      <recent name="$PROJECT_DIR$/../issueCloseTime/src" />
+      <recent name="$PROJECT_DIR$/../smells/src" />
       <recent name="$PROJECT_DIR$/src/results" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../smells/src/data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -576,20 +712,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <frame x="0" y="0" width="1149" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33758864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42083332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13203125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33758864" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5026624" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17253838" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39940536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39940536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -597,6 +734,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Runtime Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -608,102 +746,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/results/apache/bell/lucene.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/bell/velocity.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/bell/xalan.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/bell/xerces.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/tca/ant.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/tca/camel.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/tca/ivy.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/tca/jedit.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/tca/log4j.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/tca/lucene.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/tca/velocity.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/tca/xalan.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/results/apache/tca/xerces.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/results/apache/tnb/ant.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -869,9 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,52 +977,150 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/py_weka/classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="114">
           <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/run_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155">
-          <caret line="27" column="61" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tca_vs_bellwether.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
+        <state relative-caret-position="228">
           <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/run_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/run_local.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TCA/execute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-428">
+          <caret line="248" column="18" lean-forward="false" selection-start-line="248" selection-start-column="18" selection-end-line="248" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../smells/src/run_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../smells/src/run_all_loo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NAIVE/execute.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-388">
-          <caret line="88" column="49" lean-forward="true" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
+        <state relative-caret-position="65">
+          <caret line="134" column="19" lean-forward="false" selection-start-line="96" selection-start-column="1" selection-end-line="134" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../smells/src/NAIVE/execute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="135" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../issueCloseTime/src/run_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../issueCloseTime/src/run_all_loo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#56#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../issueCloseTime/src/metrics/abcd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../issueCloseTime/src/TNB/execute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2242">
+          <caret line="121" column="19" lean-forward="false" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TCA/execute.py">
+    <entry file="file://$PROJECT_DIR$/../issueCloseTime/src/NAIVE/execute.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="281" column="45" lean-forward="true" selection-start-line="281" selection-start-column="45" selection-end-line="281" selection-end-column="45" />
+        <state relative-caret-position="2375">
+          <caret line="128" column="75" lean-forward="false" selection-start-line="128" selection-start-column="75" selection-end-line="128" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Incremental/json/not_json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/run_local.py">
+    <entry file="file://$USER_HOME$/anaconda2/lib/python2.7/site-packages/pandas/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="20" column="15" lean-forward="true" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        <state relative-caret-position="342">
+          <caret line="18" column="73" lean-forward="false" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Incremental/prediction/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/run_all_loo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Incremental/execute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>

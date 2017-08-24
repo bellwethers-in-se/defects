@@ -119,7 +119,7 @@ def tnb(source, target, n_rep=12):
 
                 pd.append(p_d)
                 pf.append(p_f)
-                g.append(_g)
+                g.append(e_d)
                 auc.append(int(au_roc))
                 stats.append([src_name, int(np.mean(pd)), int(np.std(pd)),
                               int(np.mean(pf)), int(np.std(pf)),

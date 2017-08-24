@@ -74,7 +74,7 @@ def bellw(source, target, n_rep=12, verbose=False):
                         pf.append(p_f)
                         pr.append(p_r)
                         f1.append(f_1)
-                        g.append(_g)
+                        g.append(e_d)
                         auc.append(int(auroc))
 
                     stats.append([tgt_name, int(np.mean(pd)), int(np.mean(pf)),
@@ -103,21 +103,17 @@ def bellw_loo(source, target, n_rep=12, verbose=False):
     :return: result
     """
     result = dict()
-    # print("Bellwether")
     for hld_name, hld_path in target.iteritems():
         stats = []
         holdout = hld_name
         print("Holdout: {}".format(holdout))
         for src_name, src_path in source.iteritems():
             if not src_name == holdout:
-                # print("Source: {}".format(src_name))
                 pd, pf, pr, f1, g, auc = [], [], [], [], [], []
                 for tgt_name, tgt_path in target.iteritems():
                     if src_name != tgt_name and tgt_name != hld_name:
-                        # print("Target: {}".format(tgt_name))
                         src = list2dataframe([src_path.data[-1]])
                         tgt = list2dataframe([tgt_path.data[-1]])
-
                         for _ in xrange(n_rep):
                             _train, __test = weight_training(test_instance=tgt, training_instance=src)
                             actual, predicted, distribution = predict_defects(train=_train, test=__test)
@@ -128,26 +124,15 @@ def bellw_loo(source, target, n_rep=12, verbose=False):
                             pr.append(p_r)
                             f1.append(f_1)
                             auc.append(int(auroc))
-                            g.append(_g)
+                            g.append(e_d)
 
                 stats.append([src_name, int(np.mean(pd)), int(np.mean(pf)),
                               int(np.mean(pr)), int(np.mean(f1)),
                               int(np.mean(g)), int(np.mean(auc))])  # ,
         stats_df = pandas.DataFrame(sorted(stats, key=lambda lst: lst[-2], reverse=True), columns=["Name", "Pd", "Pf", "Prec", "F1", "AUC", "G"])
         print(stats_df, end="\n-----\n")
-    set_trace()
-
-    stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[0], reverse=True),  # Sort by G Score
-                             columns=["Name", "Pd", "Pf", "Prec", "F1", "AUC", "G"])
-
-    # set_trace()
-    print(tabulate(stats
-                   , headers=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"]
-                   , tablefmt="fancy_grid"))
-
-    result.update({tgt_name: stats})
-
-    return result
+        result.update({hld_name: stats_df})
+    return stats_df
 
 
 def bellw_local(source, target, n_rep=12, verbose=False):
@@ -174,7 +159,7 @@ def bellw_local(source, target, n_rep=12, verbose=False):
             pf.append(p_f)
             pr.append(p_r)
             f1.append(f_1)
-            g.append(_g)
+            g.append(e_d)
             auc.append(int(auroc))
 
         stats.append([name, int(np.mean(pd)), int(np.mean(pf)),

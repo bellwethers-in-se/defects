@@ -220,12 +220,68 @@ def tca_plus(source, target, n_rep=12):
 
                     pd.append(p_d)
                     pf.append(p_f)
-                    g.append(_g)
+                    g.append(e_d)
                     auc.append(int(auroc))
 
                 stats.append([src_name, int(np.mean(pd)), int(np.std(pd)),
                               int(np.mean(pf)), int(np.std(pf)),
                               int(np.mean(g)), int(np.std(g))])
+
+    stats = pandas.DataFrame(
+        sorted(stats, key=lambda lst: lst[0], reverse=True),
+        columns=["Name", "Pd (Mean)", "Pd (Std)",
+                 "Pf (Mean)", "Pf (Std)",
+                 "AUC (Mean)", "AUC (Std)"])  # ,
+
+    return stats
+
+
+def tca_plus_loo(source, target, n_rep=12):
+    """
+    TCA: Transfer Component Analysis with leave one out crossvalidation
+    :param source:
+    :param target:
+    :param n_rep: number of repeats
+    :return: result
+    """
+    result = dict()
+    for hld_name, hld_path in target.iteritems():
+        stats = []
+        holdout = hld_name
+        print("Holdout: {}".format(holdout))
+        for src_name, src_path in source.iteritems():
+            if not src_name == holdout:
+                pd, pf, pr, f1, g, auc = [], [], [], [], [], []
+                for tgt_name, tgt_path in target.iteritems():
+                    if src_name != tgt_name and tgt_name != hld_name:
+                        src = list2dataframe(src_path.data)
+                        tgt = list2dataframe(tgt_path.data)
+                        pd, pf, g, auc = [], [], [], []
+                        dcv_src, dcv_tgt = get_dcv(src, tgt)
+
+                        for _ in xrange(n_rep):
+                            recall, loc = None, None
+                            norm_src, norm_tgt = smart_norm(src, tgt, dcv_src, dcv_tgt)
+                            _train, __test = map_transform(norm_src, norm_tgt)
+
+                            try:
+                                actual, predicted, distribution = predict_defects(
+                                    train=_train, test=__test)
+                            except:
+                                set_trace()
+
+                            p_d, p_f, p_r, rc, f_1, e_d, _g, auroc = abcd(actual,
+                                                                          predicted,
+                                                                          distribution)
+
+                            pd.append(p_d)
+                            pf.append(p_f)
+                            g.append(e_d)
+                            auc.append(int(auroc))
+
+                        stats.append([src_name, int(np.mean(pd)), int(np.std(pd)),
+                                      int(np.mean(pf)), int(np.std(pf)),
+                                      int(np.mean(g)), int(np.std(g))])
 
     stats = pandas.DataFrame(
         sorted(stats, key=lambda lst: lst[0], reverse=True),
@@ -275,7 +331,7 @@ def tca_plus_bellw(source, target, n_rep=12):
 
                         pd.append(p_d)
                         pf.append(p_f)
-                        g.append(_g)
+                        g.append(e_d)
                         auc.append(int(auroc))
 
                     stats.append([tgt_name, int(np.mean(pd)), int(np.std(pd)),
