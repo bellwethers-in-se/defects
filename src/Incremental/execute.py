@@ -89,12 +89,12 @@ def bellw_incr(source, target, n_rep=10):
                                           int(np.mean(pr)), int(np.mean(f1)),
                                           int(np.mean(g)), int(np.mean(auc))])
 
-            stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[0], reverse=True),  # Sort by G Score
-                                     columns=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"])
+                stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[0], reverse=True),  # Sort by G Score
+                                         columns=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"])
 
-            print(tabulate(stats
-                           , headers=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"]
-                           , tablefmt="fancy_grid"), end="\n------\n")
+                print(tabulate(stats
+                               , headers=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"]
+                               , tablefmt="fancy_grid"), end="\n------\n")
 
 
 def _test_bellw_incr():
