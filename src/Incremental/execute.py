@@ -57,11 +57,12 @@ def bellw_incr(source, target, n_rep=10):
     :return: result
     """
     for src_name, src_path in source.iteritems():
-        stats_lst = []
         if src_name == "lucene":
             for n in xrange(1, len(src_path.data)):
+                stats_lst = []  # Initialize list to gather stats
+                "Reformat source to in a list"
                 src_data = [src_path.data[:n]] if not isinstance(src_path.data[:n], list) else src_path.data[:n]
-                name = src_data[0].split('/')[-1].split('.csv')[0]
+                name = src_data[0].split('/')[-1].split('.csv')[0]  # Get the name of the bellwether proj
                 print("Bellwether Version: {}".format(name))
                 for tgt_name, tgt_path in target.iteritems():
                     if not src_name == tgt_name:
@@ -89,7 +90,7 @@ def bellw_incr(source, target, n_rep=10):
                                           int(np.mean(pr)), int(np.mean(f1)),
                                           int(np.mean(g)), int(np.mean(auc))])
 
-                stats = pandas.DataFrame(sorted(stats, key=lambda lst: lst[0], reverse=True),  # Sort by G Score
+                stats = pandas.DataFrame(sorted(stats_lst, key=lambda lst: lst[0], reverse=True),  # Sort by G Score
                                          columns=["Name", "Pd", "Pf", "Prec", "F1", "G", "AUC"])
 
                 print(tabulate(stats
